@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Qatar2022Arabic-Bold;
+    src: url(../Style/Fonts/Qatar2022/Qatar2022Arabic-Bold.ttf);
+  }
+  @font-face {
+    font-family: Qatar2022Arabic-medium;
+    src: url(../Style/Fonts/qatar-2022-font/Qatar2022-Medium.otf);
+  }
+
+body{
+    margin: 0px;
+}
+
+#navbar{
+    display: inline-block;
+    width: 100%;
+    background-color: #7f1430;
+    /* float: left; */
+}
+
+#logo{
+    display: inline;
+}
+#logo img{
+    width: 150px;
+    margin: 15px;
+    padding-left: 15px;
+    
+}
+
+
+ul li{
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+    padding: 8px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    color: white;
+    font-family: Qatar2022Arabic-medium;
+    height: 100%;  
+}
+
+/* 
+ul a:hover{
+    background-color: white;
+    color: #7f1430;
+    border-radius: 5px;
+    height: 50px;
+    vertical-align: middle;
+} */
+
+ul li:hover{
+    border-bottom: 2px solid white;
+    /* border-radius: 5px; */
+}
+
+#list{
+    float: right;
+    margin: 15px;
+    
+}
+
