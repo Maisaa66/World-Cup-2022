@@ -104,12 +104,16 @@ ul li:hover {
 }
 
 .qatar {
-  -webkit-background-clip: text;
+    display: inline;
   background-clip: text;
   background-image: url("../Images/qatar.png");
   background-size: cover;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(1px 4px 4px black);
+          filter: drop-shadow(1px 4px 4px black);
 
-  /* text-shadow: none;  */
-  /* text-shadow: 1px 4px 4px black; */
+  text-shadow: none; 
+  
 }
+
