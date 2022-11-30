@@ -62,6 +62,7 @@ ul li:hover {
 /* Main Section */
 #main-section {
   height: calc(100vh - 30px);
+
 }
 
 #main-img {
@@ -107,8 +108,5 @@ ul li:hover {
   background-image: url("../Images/qatar.png");
   background-size: cover;
   color: transparent;
-
-  /* text-shadow: none;  */
-  /* text-shadow: 1px 4px 4px black; */
 }
 
