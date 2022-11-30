@@ -63,7 +63,7 @@ ul li:hover {
 /* Main Section */
 #main-section {
   height: calc(100vh - 30px);
-  position: relative;
+  /* position: relative; */
 }
 
 #main-img {
@@ -112,7 +112,6 @@ ul li:hover {
   -webkit-text-fill-color: transparent;
   -webkit-filter: drop-shadow(1px 4px 4px black);
           filter: drop-shadow(1px 4px 4px black);
-
   text-shadow: none; 
   
 }
