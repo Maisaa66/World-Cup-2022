@@ -7,6 +7,15 @@
   src: url(../Style/Fonts/qatar-2022-font/Qatar2022-Medium.otf);
 }
 
+*::selection {
+  /* color: white; */
+  background: #8b1538;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: Qatar2022Arabic-medium;
@@ -16,7 +25,7 @@ body {
 #navbar {
   display: inline-block;
   width: 100%;
-  background-color: #7f1430;
+  background-color: #8b1538;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +70,7 @@ ul li:hover {
 
 /* Main Section */
 #main-section {
-  height: calc(100vh - 30px);
+  height: 100vh;
 }
 
 #main-img {
@@ -79,6 +88,7 @@ ul li:hover {
   color: white;
   margin: 10rem 0 0 3rem;
   top: 100px;
+  z-index: -1;
 }
 
 .cup {
@@ -110,4 +120,13 @@ ul li:hover {
   -webkit-filter: drop-shadow(1px 4px 4px black);
   filter: drop-shadow(1px 4px 4px black);
   text-shadow: none;
+}
+
+#Groups {
+  width: 100%;
+  border-top: 100px solid #8b1538;
+}
+
+#Groups img {
+  width: 100%;
 }
