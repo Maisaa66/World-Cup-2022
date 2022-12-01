@@ -96,7 +96,7 @@ matches[11]["Group"] = "G";
 matches[12]["TeamA"] = "Brazil";
 matches[12]["TeamB"] = "Cameroon";
 matches[12]["Date"] = "1-12-22";
-matches[12]["Time"] = "2:25 AM";
+matches[12]["Time"] = "2:22 AM";
 matches[12]["Stadium"] = "Lusail Stadium";
 matches[12]["Group"] = "G";
 // ----------------------------------------------------  matches data
@@ -180,12 +180,15 @@ function countDown(index) {
 
   if (remain_Time < 0) {
     clearInterval(myCountDownInterval);
-    document.getElementById("counter").innerHTML = "The Game Is Starting NOW!!!";
+    document.getElementById("counter").innerText = "The Game Is Starting NOW!!!";
+    console.log("HII")
+}else{
+  document.getElementById("counter").innerText= days+" Day : "+hours+" Hour : "+minutes+" Min: "+ seconds+" Sec";
+
 }
 
-console.log(hour, now)
+console.log(hour, remain_Time)
  console.log("%c"+days+":"+hours+":"+minutes+":"+ seconds, "font-size:45px");
- document.getElementById("counter").innerText= days+" Day : "+hours+" Hour : "+minutes+" Min: "+ seconds+" Sec";
 }
 
 let myCountDownInterval = setInterval(function(){
