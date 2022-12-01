@@ -122,6 +122,7 @@ ul li:hover {
   text-shadow: none;
 }
 
+/* Groups Section */
 #Groups {
   width: 100%;
   border-top: 100px solid #8b1538;
@@ -130,3 +131,6 @@ ul li:hover {
 #Groups img {
   width: 100%;
 }
+
+/* Matches Section */
+
