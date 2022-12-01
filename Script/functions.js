@@ -17,9 +17,13 @@ function setStatus(matches) {
 
     let in_upcoming_month = split_date[1] - 1 > month;
 
-    let same_month_upcoming_day = split_date[1] - 1 == month && split_date[0] > day;
+    let same_month_upcoming_day =
+      split_date[1] - 1 == month && split_date[0] > day;
 
-    let today = split_date[1] - 1 == month && split_date[0] == day && hour < hour_split[0];
+    let today =
+      split_date[1] - 1 == month &&
+      split_date[0] == day &&
+      hour < hour_split[0];
 
     if (in_upcoming_month || same_month_upcoming_day) {
       matches[i]["Status"] = "Next";
@@ -65,20 +69,38 @@ function countDown(index) {
 
   // get the number of days, hours, min and seconds my math calculations
   var days = Math.floor(remain_Time / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((remain_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var hours = Math.floor(
+    (remain_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   var minutes = Math.floor((remain_Time % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((remain_Time % (1000 * 60)) / 1000);
 
   //if the time left is 0, it means that we reach the zero hour, so we clear the interval
   if (remain_Time < 0) {
     clearInterval(myCountDownInterval);
-    document.getElementById("counter").innerText = "The Game Is Starting NOW!!!";
+    document.getElementById("counter").innerText =
+      "The Game Is Starting NOW!!!";
     console.log("HII");
   } else {
     // if there is still time left show it in the page
-    document.getElementById("counter").innerText = days + " Day : " + hours + " Hour : " + minutes + " Min: " + seconds + " Sec";
+    document.getElementById("counter").innerText =
+      days +
+      " Day : " +
+      hours +
+      " Hour : " +
+      minutes +
+      " Min: " +
+      seconds +
+      " Sec";
   }
 
   console.log(hour, remain_Time);
-  console.log("%c" + days + ":" + hours + ":" + minutes + ":" + seconds, "font-size:45px");
+  console.log(
+    "%c" + days + ":" + hours + ":" + minutes + ":" + seconds,
+    "font-size:45px"
+  );
+}
+
+function openMatches() {
+  window.open("../Pages/Matches.html", "_self");
 }
