@@ -96,7 +96,7 @@ matches[11]["Group"] = "G";
 matches[12]["TeamA"] = "Brazil";
 matches[12]["TeamB"] = "Cameroon";
 matches[12]["Date"] = "1-12-22";
-matches[12]["Time"] = "2:22 AM";
+matches[12]["Time"] = "2:24 AM";
 matches[12]["Stadium"] = "Lusail Stadium";
 matches[12]["Group"] = "G";
 // ----------------------------------------------------  matches data
@@ -146,7 +146,7 @@ for (let i = 0; i < 12; i++) {
   else console.log("already played!");
 }
 
-// ============== CountDown Clock =================
+// ============== CountDown Clock Function =================
 
 function countDown(index) {
   let date = matches[index]["Date"];
