@@ -1,6 +1,6 @@
 let matches = [];
 
-for (let i = 0; i < 12; i++) {
+for (let i = 0; i < 13; i++) {
   matches[i] = [];
 }
 
@@ -90,6 +90,15 @@ matches[11]["Time"] = "10:00 PM";
 matches[11]["Stadium"] = "Lusail Stadium";
 matches[11]["Group"] = "G";
 
+
+//Trying the time up condition
+
+matches[12]["TeamA"] = "Brazil";
+matches[12]["TeamB"] = "Cameroon";
+matches[12]["Date"] = "1-12-22";
+matches[12]["Time"] = "2:25 AM";
+matches[12]["Stadium"] = "Lusail Stadium";
+matches[12]["Group"] = "G";
 // ----------------------------------------------------  matches data
 
 // console.log(matches);
@@ -104,30 +113,82 @@ var hour = date.getHours() - 12;
 // console.log(day);
 // console.log(hour);
 
-for(let i = 0; i < 12; i++)
-{
-  let split_date = matches[i]["Date"].split("-");    // ["2", "12" ,"22"]
+for (let i = 0; i < 12; i++) {
+  let split_date = matches[i]["Date"].split("-"); // ["2", "12" ,"22"]
 
-  let time_split = matches[i]["Time"].split(" ");    // ["10:00", "PM"]
-  let hour_split = time_split[0].split(":");            // ["10", "00"]
+  let time_split = matches[i]["Time"].split(" "); // ["10:00", "PM"]
+
+  let hour_split = time_split[0].split(":"); // ["10", "00"]
 
   // split_date[1]    ->   match month
   // split_date[0]    ->   match day
 
-  console.log(matches[i]["TeamA"] + " vs " +  matches[i]["TeamB"]  + "    " + split_date + "    " + matches[i]["Time"]);
+  console.log(
+    matches[i]["TeamA"] +
+      " vs " +
+      matches[i]["TeamB"] +
+      "    " +
+      split_date +
+      "    " +
+      matches[i]["Time"]
+  );
 
-  let in_upcoming_month = (split_date[1]-1 > month);
+  let in_upcoming_month = split_date[1] - 1 > month;
 
-  let same_month_upcoming_day = (split_date[1]-1 == month) && (split_date[0] > day); 
+  let same_month_upcoming_day =
+    split_date[1] - 1 == month && split_date[0] > day;
 
-  let today = (split_date[1]-1 == month) && (split_date[0] == day) && (hour < hour_split[0]);
+  let today =
+    split_date[1] - 1 == month && split_date[0] == day && hour < hour_split[0];
 
-  if(in_upcoming_month || same_month_upcoming_day)
-    console.log("next!");
-
-  else if(today)
-    console.log("today!");
-
-  else
-    console.log("already played!");
+  if (in_upcoming_month || same_month_upcoming_day) console.log("next!");
+  else if (today) console.log("today!");
+  else console.log("already played!");
 }
+
+// ============== CountDown Clock =================
+
+function countDown(index) {
+  let date = matches[index]["Date"];
+  let time = matches[index]["Time"];
+
+  let splitDate = date.split("-");
+  let newDate = "20" + splitDate[2] + "-" + splitDate[1] + "-" + splitDate[0];
+
+  let split_time = time.split(" ");
+  let hour_min = split_time[0].split(":");
+  let hour = hour_min[0];
+  let min = hour_min[1];
+  let timeFormat = split_time[1];
+
+  if (timeFormat == "PM" && parseInt(hour) < 12) {
+    hour = parseInt(hour) + 12 + ":" + min; //hour and min in 24 formate
+  }
+  else{
+    hour=hour+":"+min;
+  }
+
+  let countDownDate = new Date(newDate + " " + hour).getTime();
+  let now = new Date().getTime();
+
+  let remain_Time = countDownDate - now;
+
+  var days = Math.floor(remain_Time / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((remain_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((remain_Time % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((remain_Time % (1000 * 60)) / 1000);
+
+  if (remain_Time < 0) {
+    clearInterval(myCountDownInterval);
+    document.getElementById("counter").innerHTML = "The Game Is Starting NOW!!!";
+}
+
+console.log(hour, now)
+ console.log("%c"+days+":"+hours+":"+minutes+":"+ seconds, "font-size:45px");
+ document.getElementById("counter").innerText= days+" Day : "+hours+" Hour : "+minutes+" Min: "+ seconds+" Sec";
+}
+
+let myCountDownInterval = setInterval(function(){
+  countDown(12);
+}, 1000);
+
