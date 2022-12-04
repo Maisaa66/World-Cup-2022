@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Arabic-font;
+    src: url(../Style/Fonts/El_Messiri/static/ElMessiri-Regular.ttf);
+  }
+  @font-face {
+    font-family: Qatar2022Arabic-medium;
+    src: url(../Style/Fonts/qatar-2022-font/Qatar2022-Medium.otf);
+  }
+  
+  *::selection {
+    color: #edefe4;
+    background: #8b1538;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: Qatar2022Arabic-medium;
+    background-color: #edefe4;
+  }
+  
+  /* Nav Bar */
+  #navbar {
+    display: inline-block;
+    width: 100%;
+    background-color: #8b1538;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid #00b9ad33;
+  }
+  
+  #logo {
+    display: inline;
+  }
+  
+  #logo img {
+    width: 150px;
+    margin: 15px;
+    padding-left: 15px;
+  }
+  
+ #list ul li {
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+    padding: 8px;
+    margin-right: 20px;
+    height: 100%;
+  }
+  
+  #list ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    color: white;
+    height: 100%;
+  }
+  
+ #list  ul li:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  #list {
+    float: right;
+    margin: 15px;
+  }
+
+  /*------------------------------------------*/
+  #sign-in-head-div
+  {
+    text-align: center;
+  }
+    
+  #sign-in-heading 
+  {
+    color: #8b1538;
+    font-size: 3.5rem;
+    padding-top: 150px;
+  }
+
+  #sign-in-div
+  {
+    padding: 50px 0px;
+    width: 50%;
+    margin: 50px auto;
+    background-color:#bcbcb84b;
+    border-radius: 25px;
+  }
+
+  #sign-in-form
+  {
+    margin: auto;
+    max-width: fit-content;
+    font-size: 1.5rem;
+  }
+
+  #sign-in-form > div
+  {
+    margin: 50px;
+  }
+
+  input:not([type=radio])
+  {
+    display: block;
+    font-size: 1.25rem;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-bottom: 1px solid #8b1538;
+  }
+
+  input[type=radio]
+  {
+    width: 30px;
+  }
+
+  #options-div
+  {
+    margin-top: 5px;
+  }
+
+  #male-label
+  {
+    margin-right: 20px;
+  }
+
+  /*-------------------------------------------*/
+
+  #sign-in-button input{
+    background-color: #8b1538;
+    border: 1px solid #8b1538;
+    color: #edefe4;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-family: Qatar2022Arabic-medium;
+    box-shadow: 3px 3px 5px #888888;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    width: fit-content;
+    margin: auto;
+  }
+  
+  #sign-in-button input:hover, #sign-in-button input:focus{
+    background-color: #8b1538;
+    border: 1px solid #8b1538;
+    color: #edefe4;
+    border-radius: 35px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-family: Qatar2022Arabic-medium;
+    box-shadow: 5px 10px 8px #888888;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /*-------------------------------------------*/
+  #paragraph-div
+  {
+    text-align: center;
+  }
+
+  #paragraph-div a
+  {
+    color: #8b1538;
+  }
