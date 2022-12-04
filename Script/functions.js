@@ -1,5 +1,7 @@
-function setStatus(matches) {
-  let date = new Date();
+
+function setStatus(matches) 
+{
+  let date = new Date("2022/12/1 18:00");
 
   let month = date.getMonth();
   let day = date.getDate();
@@ -7,10 +9,6 @@ function setStatus(matches) {
 
   for (let i = 0; i < 12; i++) {
     let split_date = matches[i]["Date"].split("-"); // ["2", "12" ,"22"]
-
-    let time_split = matches[i]["Time"].split(" "); // ["10:00", "PM"]
-
-    let hour_split = time_split[0].split(":"); // ["10", "00"]
 
     // split_date[1]    ->   match month
     // split_date[0]    ->   match day
@@ -22,8 +20,7 @@ function setStatus(matches) {
 
     let today =
       split_date[1] - 1 == month &&
-      split_date[0] == day &&
-      hour < hour_split[0];
+      split_date[0] == day;
 
     if (in_upcoming_month || same_month_upcoming_day) {
       matches[i]["Status"] = "Next";
@@ -35,7 +32,7 @@ function setStatus(matches) {
   }
 }
 
-function countDown(index) {
+function countDown(index, card_index) {
   let date = matches[index]["Date"];
   let time = matches[index]["Time"];
 
@@ -61,9 +58,6 @@ function countDown(index) {
   //get the time in mellisec until the date of the match
   let countDownDate = new Date(newDate + " " + hour).getTime();
 
-  // get the time of today
-  let now = new Date().getTime(); //set the date to any date
-
   // get the remaining time or time left from now to the match time
   let remain_Time = countDownDate - now;
 
@@ -75,31 +69,41 @@ function countDown(index) {
   var minutes = Math.floor((remain_Time % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((remain_Time % (1000 * 60)) / 1000);
 
+  let time_left
   //if the time left is 0, it means that we reach the zero hour, so we clear the interval
   if (remain_Time < 0) {
-    clearInterval(myCountDownInterval);
-    document.getElementById("counter").innerText =
-      "The Game Is Starting NOW!!!";
-    console.log("HII");
+
+    if(card_index == 0)
+      clearInterval(myCountDownInterval1);
+      
+    else if(card_index == 1)
+      clearInterval(myCountDownInterval2);
+      
+    else if(card_index == 2)
+      clearInterval(myCountDownInterval3);
+      
+    else if(card_index == 3)
+      clearInterval(myCountDownInterval4);
+   
+    matchCountDown[card_index].innerHTML = "● Live Now";
+    matchCountDown[card_index].style.color = "red";
+    kickoff[card_index].style.display = "none";
+
   } else {
     // if there is still time left show it in the page
-    document.getElementById("counter").innerText =
-      days +
-      " Day : " +
-      hours +
-      " Hour : " +
-      minutes +
-      " Min: " +
-      seconds +
-      " Sec";
-  }
+    time_left = [days, hours, minutes, seconds];
 
-  console.log(hour, remain_Time);
-  console.log(
-    "%c" + days + ":" + hours + ":" + minutes + ":" + seconds,
-    "font-size:45px"
-  );
+    daysLeft[card_index].innerText = days + " days";
+    hoursLeft[card_index].innerText = hours + " hours";
+    minutesLeft[card_index].innerText = minutes + " minutes";
+    secondsLeft[card_index].innerText = seconds + " seconds";
+  }
 }
+
+// increase time by one second
+setInterval(function(){ 
+  now += 1000;
+ }, 1000);
 
 function openMatches() {
   window.open("../Pages/Matches.html", "_blank");
