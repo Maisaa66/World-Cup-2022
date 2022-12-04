@@ -166,10 +166,8 @@
   }
 
   #matches-nav-bar ul li:hover{
-    background-color: #bcbcb85e;
     border-radius: 25px;
-    padding: 20px 0px;
-    /* height: 100%; */
+    padding: 10px 0px;
     border-bottom: 2px solid #8b1538;
     
   }

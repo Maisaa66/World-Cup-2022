@@ -1,5 +1,7 @@
-function setStatus(matches) {
-  let date = new Date();
+
+function setStatus(matches) 
+{
+  let date = new Date("2022/12/1 18:00");
 
   let month = date.getMonth();
   let day = date.getDate();
