@@ -62,7 +62,7 @@ function countDown(index) {
   let countDownDate = new Date(newDate + " " + hour).getTime();
 
   // get the time of today
-  let now = new Date().getTime();
+  let now = new Date().getTime(); //set the date to any date
 
   // get the remaining time or time left from now to the match time
   let remain_Time = countDownDate - now;
@@ -102,5 +102,5 @@ function countDown(index) {
 }
 
 function openMatches() {
-  window.open("../Pages/Matches.html", "_self");
+  window.open("../Pages/Matches.html", "_blank");
 }

@@ -8,7 +8,7 @@
 }
 
 *::selection {
-  /* color: white; */
+  color: #edefe4;
   background: #8b1538;
 }
 
@@ -236,6 +236,5 @@ padding-bottom: 20px;
   cursor: pointer;
   transform: translateY(-0.25em);
 }
-
 
 
