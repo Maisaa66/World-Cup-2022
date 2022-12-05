@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../Style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Style/cardStyle.css" />
     <title>World Cup 2022</title>
   </head>
   <body>
@@ -12,7 +13,6 @@
       <div id="logo">
         <a href="#Home"><img src="../Images/logo.png" /></a>
       </div>
-
       <div id="list">
         <ul>
           <li><a href="#Home">Home</a></li>
@@ -21,11 +21,9 @@
           <li><a href="#History">History</a></li>
           <li><a href="#Booking">Booking</a></li>
           <li><a id="signin" href="../Pages/Sign-in.html">Sign In</a></li>
-          <!-- check cookie -->
         </ul>
       </div>
     </div>
-
     <div id="Home">
       <div id="main-section">
         <div id="main-img"></div>
@@ -36,7 +34,6 @@
         </div>
       </div>
     </div>
-
     <div id="Groups">
       <img src="../Images/groups_middle.jpg" alt="" usemap="#image-map" />
       <map name="image-map">
@@ -298,7 +295,6 @@
         />
       </map>
     </div>
-
     <div id="Matches">
       <h2 id="matches-heading">Today's Matches</h2>
       <div class="match">
@@ -307,28 +303,20 @@
           <img src="../Images/Bandera_de_España (Custom).png" alt="" />
           <h3>Team 1</h3>
         </div>
-
         <div class="match-team2">
           <img src="../Images/Flag_of_Argentina (Custom).png" alt="" />
           <h3>Team 2</h3>
         </div>
-
         <div class="vs"><span>Vs</span></div>
-
         <div class="match-data">
           <p class="kick">Kick-off in:</p>
           <div class="match-countDown">
-            <span class="days">Day</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="hours">Hour</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="minutes">minute</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="days">Day</span> &nbsp; <span class="dot">● </span>&nbsp; <span class="hours">Hour</span> &nbsp;
+            <span class="dot">● </span>&nbsp; <span class="minutes">minute</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="seconds">second</span>
           </div>
           <p>
-            <span class="match-time">9 PM</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="match-time">9 PM</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="match-stadium">Ahmad Bin Ali Stadium</span>
           </p>
         </div>
@@ -351,17 +339,12 @@
         <div class="match-data">
           <p class="kick">Kick-off in:</p>
           <div class="match-countDown">
-            <span class="days">Day</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="hours">Hour</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="minutes">minute</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="days">Day</span> &nbsp; <span class="dot">● </span>&nbsp; <span class="hours">Hour</span> &nbsp;
+            <span class="dot">● </span>&nbsp; <span class="minutes">minute</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="seconds">second</span>
           </div>
           <p>
-            <span class="match-time">9 PM</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="match-time">9 PM</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="match-stadium">Ahmad Bin Ali Stadium</span>
           </p>
         </div>
@@ -384,17 +367,12 @@
         <div class="match-data">
           <p class="kick">Kick-off in:</p>
           <div class="match-countDown">
-            <span class="days">Day</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="hours">Hour</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="minutes">minute</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="days">Day</span> &nbsp; <span class="dot">● </span>&nbsp; <span class="hours">Hour</span> &nbsp;
+            <span class="dot">● </span>&nbsp; <span class="minutes">minute</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="seconds">second</span>
           </div>
           <p>
-            <span class="match-time">9 PM</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="match-time">9 PM</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="match-stadium">Ahmad Bin Ali Stadium</span>
           </p>
         </div>
@@ -417,17 +395,12 @@
         <div class="match-data">
           <p class="kick">Kick-off in:</p>
           <div class="match-countDown">
-            <span class="days">Day</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="hours">Hour</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
-            <span class="minutes">minute</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="days">Day</span> &nbsp; <span class="dot">● </span>&nbsp; <span class="hours">Hour</span> &nbsp;
+            <span class="dot">● </span>&nbsp; <span class="minutes">minute</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="seconds">second</span>
           </div>
           <p>
-            <span class="match-time">9 PM</span> &nbsp;
-            <span class="dot">● </span>&nbsp;
+            <span class="match-time">9 PM</span> &nbsp; <span class="dot">● </span>&nbsp;
             <span class="match-stadium">Ahmad Bin Ali Stadium</span>
           </p>
         </div>
@@ -437,10 +410,24 @@
         <button onclick="openMatches()">View Schedule</button>
       </div>
     </div>
+    <div id="History">
+      <h2 id="matches-heading">History</h2>
+      <div id="slider-container">
+        <h3 class="card-header">GOAL COLLECTIONS</h3>
+        <button class="left">&lt;</button>
+        <div class="card card-style">
+          <a class="anchor-card" href=""><div class="image"></div></a>
+          <p class="caption"></p>
+        </div>
+        <button class="right">&gt;</button>
+      </div>
+    </div>
 
     <script src="../Script/CookiesLibrary.js"></script>
     <script src="../Script/matchesInfo.js"></script>
+    <script src="../Script/sliderInfo.js"></script>
     <script src="../Script/functions.js"></script>
+    <script src="../Script/slider.js"></script>
     <script src="../Script/main.js"></script>
   </body>
 </html>

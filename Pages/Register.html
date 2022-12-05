@@ -4,84 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Register</title>
-
     <link href="../Style/register.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!--------------------  Nav bar -------------------->
-
     <div id="navbar">
       <div id="logo">
         <a href="../Pages/Home.html"><img src="../Images/logo.png" /></a>
       </div>
-
       <div id="list">
         <ul>
           <li><a href="../Pages/Home.html">Home</a></li>
           <li><a href="../Pages/Home.html#Groups">Groups</a></li>
           <li><a href="../Pages/Matches.html">Matches</a></li>
-          <li><a href="#History">History</a></li>
+          <li><a href="../Pages/Home.html#History">History</a></li>
           <li><a href="#Booking">Booking</a></li>
           <li><a id="signin" href="../Pages/Sign-in.html">Sign In</a></li>
-          <!-- check cookie -->
         </ul>
       </div>
     </div>
-
-    <!-------------------- Register form -------------------->
-
     <div id="register-head-div">
       <h2 id="register-heading">Registration Form</h2>
     </div>
-
     <div id="register-div">
       <form id="register-form" action="../Pages/Home.html">
         <div>
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="fname" placeholder="First Name" required />
         </div>
-
         <div>
           <label for="last-name">Last Name</label>
           <input type="text" id="last-name" name="lname" placeholder="Last Name" required />
         </div>
-
         <div>
           <label for="Email">Email</label>
           <input type="email" id="Email" name="email" placeholder="Email" required />
         </div>
-
         <div>
           <label for="Password">Password</label>
           <input type="password" id="Password" name="password" placeholder="Password" required />
         </div>
-
         <div>
           <label for="Phone">Phone</label>
           <input type="tel" pattern="\+[0-9]{3}[0-9]{8}" id="Phone" name="phone" placeholder="+20123456789" required />
         </div>
-
         <div id="gender-div">
           <label>Gender</label>
-
           <div id="options-div">
             <input type="radio" name="gender" value="male" id="Male" />
             <label id="male-label" for="Male">Male</label>
-
             <input type="radio" name="gender" value="female" id="Female" />
             <label for="Female">Female</label>
           </div>
         </div>
-
         <div id="register-button">
           <input type="submit" value="Register" id="regBtn" />
         </div>
       </form>
     </div>
-
     <script src="../Script/CookiesLibrary.js"></script>
     <script src="../Script/Register.js"></script>
   </body>

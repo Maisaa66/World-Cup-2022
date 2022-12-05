@@ -99,13 +99,3 @@ matches[11]["Time"] = "10:00 PM";
 matches[11]["Stadium"] = "Lusail Stadium";
 matches[11]["Group"] = "G";
 matches[11]["Status"];
-
-
-
-
-
-// let bestGoals = [];
-// bestGoals[0]["Year"] = "2018";
-// bestGoals[0]["url"] = "https://www.fifa.com/fifaplus/en/watch/2M4ylDZw7S67LKHySHV0bN";
-// bestGoals[0]["img"] = "https://digitalhub.fifa.com/transform/465dac29-e94b-404e-bc34-662ff9c63b51/2018_Best_Goals_Portrait?io=transform:fill,aspectratio:10x16&quality=100";
-// bestGoals[0]["caption"] = "Best Goals | 2018 FIFA World Cup Russia™";

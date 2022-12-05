@@ -4,61 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Register</title>
-
     <link href="../Style/sign-in.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!--------------------  Nav bar -------------------->
-
     <div id="navbar">
       <div id="logo">
         <a href="../Pages/Home.html"><img src="../Images/logo.png" /></a>
       </div>
-
       <div id="list">
         <ul>
           <li><a href="../Pages/Home.html">Home</a></li>
           <li><a href="../Pages/Home.html#Groups">Groups</a></li>
           <li><a href="../Pages/Matches.html">Matches</a></li>
-          <li><a href="#History">History</a></li>
+          <li><a href="../Pages/Home.html#History">History</a></li>
           <li><a href="#Booking">Booking</a></li>
           <li><a id="signin" href="../Pages/Sign-in.html">Sign In</a></li>
-          <!-- check cookie -->
         </ul>
       </div>
     </div>
-
-    <!-------------------- Register form -------------------->
-
     <div id="sign-in-head-div">
       <h2 id="sign-in-heading">Sign in</h2>
     </div>
-
     <div id="sign-in-div">
       <form id="sign-in-form">
         <div>
           <label for="Email">Email</label>
           <input type="email" id="Email" name="email" placeholder="Email" required />
         </div>
-
         <div>
           <label for="Password">Password</label>
           <input type="password" id="Password" name="password" placeholder="Password" required />
         </div>
-
         <div id="sign-in-button">
           <input type="submit" value="Sign in" />
         </div>
       </form>
-
       <div id="paragraph-div">
         <p>Don't have an account? &nbsp;<a href="./Register.html">Sign up</a></p>
       </div>
     </div>
-
     <script src="../Script/CookiesLibrary.js"></script>
     <script src="../Script/signin.js"></script>
   </body>

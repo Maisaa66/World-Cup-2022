@@ -31,6 +31,7 @@ body {
   top: 0;
   left: 0;
   border-bottom: 4px solid #00b9ad33;
+  z-index: 1;
 }
 
 #logo {
@@ -79,7 +80,7 @@ ul li:hover {
   height: 100%;
   background-image: url("../Images/worldCup.jpg");
   background-size: cover;
-  position: relative;
+  position: fixed;
   z-index: -1;
   top: 30px;
 }
@@ -88,6 +89,8 @@ ul li:hover {
   position: absolute;
   color: white;
   margin: 10rem 0 0 3rem;
+  position: fixed;
+
   top: 100px;
   z-index: -1;
 }
@@ -137,22 +140,24 @@ ul li:hover {
 
 #Matches {
   text-align: center;
+  background-color: #edefe4;
 }
 
 #matches-heading {
   color: #8b1538;
   font-size: 3.5rem;
   padding-top: 150px;
+  margin-top: -6px;
 }
 
 .match img {
-  width:100px;
+  width: 100px;
   border-radius: 5px;
 }
 
 .match {
   background-color: #bcbcb84b;
-  margin: 0px 200px 50px;;
+  margin: 0px 200px 50px;
   border-radius: 30px;
   /* box-shadow: 5px 10px 8px #888888; */
 }
@@ -171,7 +176,7 @@ ul li:hover {
   font-weight: 1000;
   font-size: 2rem;
   margin-top: 0;
-  padding-top:45px;
+  padding-top: 45px;
 }
 
 .vs {
@@ -179,8 +184,6 @@ ul li:hover {
   margin: 0px 0px 75px;
   font-weight: bolder;
   padding-top: 20px;
-  
-  
 }
 
 .vs span {
@@ -191,8 +194,8 @@ ul li:hover {
 }
 
 .match-data {
-margin-top:-40px;
-padding-bottom: 20px;
+  margin-top: -40px;
+  padding-bottom: 20px;
 }
 
 .dot {
@@ -202,15 +205,14 @@ padding-bottom: 20px;
 .match-countDown {
   margin-bottom: 50px;
   font-size: 1.2rem;
-
 }
 
 .kick {
   font-size: 1.25rem;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
-#schedule-button button{
+#schedule-button button {
   background-color: #8b1538;
   border: 1px solid #8b1538;
   color: #edefe4;
@@ -223,7 +225,8 @@ padding-bottom: 20px;
   cursor: pointer;
 }
 
-#schedule-button button:hover, #schedule-button button:focus{
+#schedule-button button:hover,
+#schedule-button button:focus {
   background-color: #8b1538;
   border: 1px solid #8b1538;
   color: #edefe4;
@@ -236,4 +239,12 @@ padding-bottom: 20px;
   cursor: pointer;
 }
 
+/* History */
+#History {
+  background-color: #edefe4;
+  padding: 0 0 150px;
+}
 
+#History h2 {
+  text-align: center;
+}
