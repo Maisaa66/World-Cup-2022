@@ -1,6 +1,3 @@
-// get the time of today
-let now = new Date("2022/12/1 17:59").getTime(); //set the date to any date
-
 // Setting Status for matches
 setStatus(matches);
 
@@ -47,22 +44,6 @@ for (let i = 0; i < matches.length; i++) {
     match_card_index += 1;
   }
 }
-
-// let myCountDownInterval1 = setInterval(function () {
-//   countDown(todays_matches_indices[0], 0);
-// }, 1000);
-
-// let myCountDownInterval2 = setInterval(function () {
-//   countDown(todays_matches_indices[1], 1);
-// }, 1000);
-
-// let myCountDownInterval3 = setInterval(function () {
-//   countDown(todays_matches_indices[2], 2);
-// }, 1000);
-
-// let myCountDownInterval4 = setInterval(function () {
-//   countDown(todays_matches_indices[3], 3);
-// }, 1000);
 
 createCountDown(todays_matches_indices[0], 0);
 createCountDown(todays_matches_indices[1], 1);

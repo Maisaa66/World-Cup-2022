@@ -165,7 +165,14 @@
     font-size: 1.8rem;
   }
 
-  #matches-nav-bar ul li:hover{
+  /* #matches-nav-bar ul li:hover{
+    border-radius: 25px;
+    padding: 10px 0px;
+    border-bottom: 2px solid #8b1538;
+    
+  } */
+
+  .focused-link{
     border-radius: 25px;
     padding: 10px 0px;
     border-bottom: 2px solid #8b1538;
@@ -197,7 +204,7 @@
 }
 
 
-.teamName{
+.teamName1, .teamName2{
     float: right;
     margin: 15px 125px 0px 0px;
 }

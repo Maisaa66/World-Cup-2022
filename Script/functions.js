@@ -1,3 +1,6 @@
+// get the time of today
+let now = new Date("2022/12/1 17:59").getTime(); //set the date to any date
+
 function setStatus(matches) {
   let date = new Date("2022/12/1 18:00");
 
@@ -19,11 +22,11 @@ function setStatus(matches) {
     let today = split_date[1] - 1 == month && split_date[0] == day;
 
     if (in_upcoming_month || same_month_upcoming_day) {
-      matches[i]["Status"] = "Next";
+      matches[i]["Status"] = "Upcoming";
     } else if (today) {
       matches[i]["Status"] = "Today";
     } else {
-      matches[i]["Status"] = "Already Played!";
+      matches[i]["Status"] = "Latest";
     }
   }
 }
