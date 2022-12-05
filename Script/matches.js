@@ -1,3 +1,4 @@
+isLogin();
 // Setting Status for matches
 setStatus(matches);
 

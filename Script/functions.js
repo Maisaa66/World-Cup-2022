@@ -90,3 +90,15 @@ function createCountDown(index, card_index) {
     }
   }, 1000);
 }
+
+function isLogin() {
+  if (hasCookie("isLogin")) {
+    let signin = document.getElementById("signin");
+    signin.innerText = "Log out";
+    signin.addEventListener("click", function (e) {
+      deleteCookie("isLogin");
+      location.replace("../Pages/Home.html");
+      e.preventDefault();
+    });
+  }
+}

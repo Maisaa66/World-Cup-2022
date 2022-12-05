@@ -1,3 +1,5 @@
+isLogin();
+
 // Setting Status for matches
 setStatus(matches);
 
@@ -26,19 +28,15 @@ for (let i = 0; i < matches.length; i++) {
   if (matches[i]["Status"] == "Today") {
     matchesGroups[match_card_index].innerText = "Group " + matches[i]["Group"]; // Accessing group
 
-    let team1_name = (matchesTeam1[match_card_index].children[1].innerText =
-      matches[i]["TeamA"]); // Accessing Team1 name
-    let team2_name = (matchesTeam2[match_card_index].children[1].innerText =
-      matches[i]["TeamB"]); // Accessing Team2 name
+    let team1_name = (matchesTeam1[match_card_index].children[1].innerText = matches[i]["TeamA"]); // Accessing Team1 name
+    let team2_name = (matchesTeam2[match_card_index].children[1].innerText = matches[i]["TeamB"]); // Accessing Team2 name
 
     matchesStadiums[match_card_index].innerText = matches[i]["Stadium"]; // Accessing Stadium name
 
     matchesTime[match_card_index].innerText = matches[i]["Time"]; // Accessing Match Time
 
-    matchesTeam1[match_card_index].children[0].src =
-      "../Images/flags/" + team1_name + ".png"; // Accessing Team1 flag
-    matchesTeam2[match_card_index].children[0].src =
-      "../Images/flags/" + team2_name + ".png"; // Accessing Team2 flag
+    matchesTeam1[match_card_index].children[0].src = "../Images/flags/" + team1_name + ".png"; // Accessing Team1 flag
+    matchesTeam2[match_card_index].children[0].src = "../Images/flags/" + team2_name + ".png"; // Accessing Team2 flag
 
     todays_matches_indices.push(i);
     match_card_index += 1;
