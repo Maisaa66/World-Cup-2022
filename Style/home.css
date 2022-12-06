@@ -141,13 +141,15 @@ ul li:hover {
 #Matches {
   text-align: center;
   background-color: #edefe4;
+  padding-bottom: 50px;
+  border-bottom: 4px solid #0000000d;
 }
 
 #matches-heading {
   color: #8b1538;
   font-size: 3.5rem;
   padding-top: 150px;
-  margin-top: -6px;
+  margin-top: 0px;
 }
 
 .match img {
@@ -159,7 +161,10 @@ ul li:hover {
   background-color: #bcbcb84b;
   margin: 0px 200px 50px;
   border-radius: 30px;
-  /* box-shadow: 5px 10px 8px #888888; */
+}
+
+.match:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .match-team1 {

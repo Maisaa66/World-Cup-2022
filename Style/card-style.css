@@ -38,7 +38,8 @@
   text-shadow: 1px 1px 5px black;
 }
 
-.left:hover, .right:hover {
+.left:hover,
+.right:hover {
   background-color: #0000005e;
 }
 

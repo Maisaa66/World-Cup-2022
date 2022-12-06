@@ -1,4 +1,4 @@
-// get the time of today
+// Get the time of today
 let now = new Date("2022/12/1 17:59").getTime(); //set the date to any date
 
 function setStatus(matches) {
@@ -16,8 +16,7 @@ function setStatus(matches) {
 
     let in_upcoming_month = split_date[1] - 1 > month;
 
-    let same_month_upcoming_day =
-      split_date[1] - 1 == month && split_date[0] > day;
+    let same_month_upcoming_day = split_date[1] - 1 == month && split_date[0] > day;
 
     let today = split_date[1] - 1 == month && split_date[0] == day;
 
@@ -31,7 +30,7 @@ function setStatus(matches) {
   }
 }
 
-// increase time by one second
+// Increase time by one second
 setInterval(function () {
   now += 1000;
 }, 1000);
@@ -70,9 +69,7 @@ function createCountDown(index, card_index) {
 
     // get the number of days, hours, min and seconds my math calculations
     var days = Math.floor(remain_Time / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (remain_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
+    var hours = Math.floor((remain_Time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((remain_Time % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((remain_Time % (1000 * 60)) / 1000);
 
@@ -91,6 +88,7 @@ function createCountDown(index, card_index) {
   }, 1000);
 }
 
+// Sign in section Validation
 function isLogin() {
   if (hasCookie("isLogin")) {
     let signin = document.getElementById("signin");
