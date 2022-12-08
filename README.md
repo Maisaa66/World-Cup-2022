@@ -14,6 +14,18 @@
 
 </div>
 
+| Name | Group | Role |
+| ----------- | :-----------: | -------- |
+| Alaa Mohamed Mostafa | A | Handling Home Page with its sections & Navbar |
+| Maisaa Mohamed Hamza     | A | Creating Slider functionality & Handle Available Matches in Booking |
+| Rabab Farouq Elsayed | A | Handling Matches & View Schedule Button & Footer |
+| Yara GamalEldin ElGazar       | A | Handling Booking Section & Authentication & Groups Mapping |
+| Ziad Ahmed Eleraky  | A | Handling Register & Signin Section using Cookies & Handling Events in Matches section |
+
+> All team members participated in User Interface 
+
+<br>
+
 <!-- TABLE OF CONTENTS -->
 
 <details>
