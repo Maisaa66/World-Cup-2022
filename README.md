@@ -71,7 +71,7 @@ This project is a CST project with the following requirments:
 
 <br>
 
-## <b>Objectives</b>
+## 🎯 <b>Objectives</b>
 
 Practice what we have studied
 
@@ -112,7 +112,8 @@ Practice what we have studied
 
 <div id="getting-started">
 <!-- <img src="Images/start-up.png" width="30"> -->
-
+<br>
+  
 ## <b style="list-style-type: upper-roman;font-size:26px; ">🚀 &nbsp; Getting Started</b>
 
 <div style="margin-left:60px">
@@ -130,7 +131,7 @@ Git Clone The Repo
 <div id="roadmap" >
 <!-- <img src="Images/steps.png" width="30"> -->
 
-## <b style="list-style-type: upper-roman;font-size:26px; ">🏃🏻 &nbsp; Roadmap</b>
+## <b style="list-style-type: upper-roman;font-size:26px; ">🗺 &nbsp; Roadmap</b>
 
 </div>
 
@@ -217,10 +218,13 @@ Don't forget to give the project a star! Thanks again!
 
 <br>
 
-## 🎥 Demo
+## 🎥 FIFA World CUP Qatar 2022 Demo
 
 <br>
-<!-- <div id="Demo"><video controls src="./Videos/Home-Demo.mp4" muted="true"></video></div> -->
+
+<div id="Demo"><video controls src="https://user-images.githubusercontent.com/61458323/206560156-34528fa2-38dd-434e-b604-a51f601059c9.mp4" muted="true"></video></div>
+
+
 
 <p align="right">(<a href="#logo">back to top</a>)</p>
 
