@@ -14,7 +14,6 @@
 
 </div>
 
-
 <!-- TABLE OF CONTENTS -->
 
 <details>
@@ -34,16 +33,21 @@
   </ol>
 </details>
 
+<br>
+
 <!-- Project Description -->
 <div id="about-the-project">
 <!-- <img src="Images/research.png" width="30px"> -->
-<h2 style="list-style-type: upper-roman;font-size:26px; ">📖  &nbsp; Project Description</h2>
+
+## <b style="list-style-type: upper-roman;font-size:26px; ">📖  &nbsp; Project Description</b>
+
 <p>
 
 Our Project is inspired from <b>World Cup Qatar 2022</b>. <a href="#Demo">View Web Demo</a>
 <br>
 
 This project is a CST project with the following requirments:
+
 <ul>
 <li>Using <b>HTML</b> without HTML5</li>
 <li>Using <b>CSS</b> without CSS3</li>
@@ -52,10 +56,13 @@ This project is a CST project with the following requirments:
 </p>
 
 <div style="margin-left:10px">
-<h3>Objectives</h3>
-Practice what we have studied
 
 <br>
+
+## <b>Objectives</b>
+
+Practice what we have studied
+
 <br>
 
 > ### HTML
@@ -69,21 +76,20 @@ Practice what we have studied
     ✅ Display
     ✅ Positions
     ✅ Box Model
-    
+
 > ### JavaScript
 
     ✅ Associative Array
     ✅ DOM
-    ✅ BOM    
+    ✅ BOM
     ✅ Handling Events
-    ✅ Cookies  
+    ✅ Cookies
 
 </div>
 </div>
 
+## <img id="built-with" src="https://kadkamtech.ca/wp-content/uploads/2017/10/mission.gif" width="40"> <b style="font-size:26px; "> Built With</b>
 
- ## <img id="built-with" src="https://kadkamtech.ca/wp-content/uploads/2017/10/mission.gif" width="40"> <b style="font-family: Times New Roman; list-style-type: upper-roman;font-size:24px; "> Built With</b>
- 
 <br>
 
 <div  style="padding-left:60px;" >
@@ -94,13 +100,16 @@ Practice what we have studied
 
 <div id="getting-started">
 <!-- <img src="Images/start-up.png" width="30"> -->
-<h2 style="list-style-type: upper-roman;font-size:26px; ">🚀 &nbsp; Getting Started</h2>
+
+## <b style="list-style-type: upper-roman;font-size:26px; ">🚀 &nbsp; Getting Started</b>
+
 <div style="margin-left:60px">
 <p>To get a local copy up and running follow thia simple step.</p>
 <p>
 Git Clone The Repo
 
-``` git clone https://github.com/Maisaa66/World-Cup-2022 ```
+`git clone https://github.com/Maisaa66/World-Cup-2022`
+
 </p>
 </div>
 </div>
@@ -108,7 +117,9 @@ Git Clone The Repo
 <br>
 <div id="roadmap" >
 <!-- <img src="Images/steps.png" width="30"> -->
-<h2 style="list-style-type: upper-roman;font-size:26px; ">🏃🏻 &nbsp; Roadmap</h2>
+
+## <b style="list-style-type: upper-roman;font-size:26px; ">🏃🏻 &nbsp; Roadmap</b>
+
 </div>
 
 <br>
@@ -122,47 +133,65 @@ Git Clone The Repo
      ✅ History
      ✅ Footer
 
+<div><video controls src="./Videos/Home-Demo.mp4" muted="true"></video></div>
+
+<br>
+
 > ### Matches Schedule
 
     ✅ Latest Matches
     ✅ Today's Matches
     ✅ Upcoming Matches
 
-> ### Booking 
+<div><video controls src="./Videos/Matches-Demo.mp4" muted="true"></video></div>
+
+<br>
+
+> ### Booking
 
     ✅ Authentication 🔑 (Using Cookies)
     ✅ Authorization  🔑 (Using Cookies)
     ✅ Booked Matches
     ✅ Available Matches
 
-> ### Sign in  
+<div><video controls src="./Videos/Booking-Demo.mp4" muted="true"></video></div>
 
-    ✅ Authentication 🔑 (Using Cookies)
-    ✅ Authorization  🔑 (Using Cookies)
+<br>
 
 > ### Register
 
     ✅ Authentication 🔑 (Using Cookies)
     ✅ Authorization  🔑 (Using Cookies)
 
+<div><video controls src="./Videos/Register-Demo.mp4" muted="true"></video></div>
 
+<br>
 
+> ### Sign in
+
+    ✅ Authentication 🔑 (Using Cookies)
+    ✅ Authorization  🔑 (Using Cookies)
+
+<div><video controls src="./Videos/Signin-Demo.mp4" muted="true"></video></div>
+
+<br>
 
 <span id="contributers" ></span>
 
 ## 🤝 Contributers
+
 <br>
 <a href="https://github.com/Maisaa66/World-Cup-2022/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Maisaa66/World-Cup-2022" />
 </a>
 
-
+<br>
 
 <span id="Contributing" ></span>
 
- ## ✍ Contributing
+## ✍ Contributing
 
-<br>
+
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 <br>
@@ -174,22 +203,18 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin Maisaa66/World-Cup-2022`)
 5. Open a Pull Request
 
-
 <br>
 
 ## 🎥 Demo
 
 <br>
-<img id="Demo"src="Images/Home.gif">
+<!-- <div id="Demo"><video controls src="./Videos/Home-Demo.mp4" muted="true"></video></div> -->
 
 <p align="right">(<a href="#logo">back to top</a>)</p>
 
-
 [contributors-shield]: https://img.shields.io/github/contributors/Maisaa66/World-Cup-2022?style=for-the-badge
 [contributors-url]: https://github.com/Maisaa66/World-Cup-2022/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/Maisaa66/World-Cup-2022?style=for-the-badge
 [forks-url]: https://github.com/Maisaa66/World-Cup-2022/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/Maisaa66/World-Cup-2022?style=for-the-badge
 [stars-url]: https://github.com/Maisaa66/World-Cup-2022/stargazers
