@@ -155,7 +155,7 @@ Git Clone The Repo
     ✅ Today's Matches
     ✅ Upcoming Matches
 
-<div><video controls src="./Videos/Matches-Demo.mp4" muted="true"></video></div>
+<div><img src="Videos/Matches.gif"/></div>
 
 <br>
 
@@ -175,7 +175,7 @@ Git Clone The Repo
     ✅ Authentication 🔑 (Using Cookies)
     ✅ Authorization  🔑 (Using Cookies)
 
-<div><video controls src="./Videos/Register-Demo.mp4" muted="true"></video></div>
+<div><img src="Videos/Register.gif"/></div>
 
 <br>
 
@@ -184,7 +184,7 @@ Git Clone The Repo
     ✅ Authentication 🔑 (Using Cookies)
     ✅ Authorization  🔑 (Using Cookies)
 
-<div><video controls src="./Videos/Signin-Demo.mp4" muted="true"></video></div>
+<div><img src="Videos/Sign in.gif"/></div>
 
 <br>
 
