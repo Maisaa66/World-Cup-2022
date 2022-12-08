@@ -145,7 +145,7 @@ Git Clone The Repo
      ✅ History
      ✅ Footer
 
-<div><video controls src="./Videos/Home-Demo.mp4" muted="true"></video></div>
+<div><img src="Videos/Home.gif"/></div>
 
 <br>
 
