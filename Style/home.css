@@ -44,7 +44,7 @@ body {
   padding-left: 15px;
 }
 
-ul li {
+#navbar ul li {
   list-style-type: none;
   overflow: hidden;
   float: left;
@@ -53,7 +53,7 @@ ul li {
   height: 100%;
 }
 
-ul li a {
+#navbar ul li a {
   text-decoration: none;
   display: block;
   font-size: 22px;
@@ -61,7 +61,7 @@ ul li a {
   height: 100%;
 }
 
-ul li:hover {
+#navbar ul li:hover {
   border-bottom: 2px solid white;
 }
 
@@ -251,5 +251,32 @@ ul li:hover {
 }
 
 #History h2 {
+  text-align: center;
+}
+
+/*footer*/
+.footer
+{
+  background-color: #8b1538;
+  color: #edefe4;
+  height: 35vh;
+  margin-top: -20px;
+  padding: 25px 10px 10px 30px;
+  font-size: 1.2rem;
+}
+
+.footer ul li
+{
+  padding-bottom: 10px;
+}
+
+.footer ul li a
+{
+  color: #edefe4;
+  margin-left: 20px;
+}
+
+#rights
+{
   text-align: center;
 }

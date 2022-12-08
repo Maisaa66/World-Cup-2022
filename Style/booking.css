@@ -85,6 +85,11 @@ td{
     text-align: right;
 }
 
+.ticket-minus, .ticket-plus
+{
+  cursor: pointer;
+}
+
 .ticketContainer{
     display: inline;
     text-align: right;

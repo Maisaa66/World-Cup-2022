@@ -42,7 +42,7 @@
             <th>Number of Tickets</th>
             <th>Price</th>
           </tr>
-          <tr>
+          <tr class="matchRow">
             <td class="matchCol">
               <div class="booked-team1">
                 <img src="" />
@@ -60,7 +60,7 @@
               <span class="booked-match__stadium">Al Thumama Stadium</span>
             </td>
             <td class="booked-Tickets-Num">5</td>
-            <td></td>
+            <td class="calculated-price"></td>
           </tr>
         </table>
       </div>
@@ -88,15 +88,14 @@
             </div>
             <div class="time">17:00</div>
             <div class="priceDiv">
-              Price: <span class="price"> $1000 </span>
+              Price: <span class="price">$1000</span>
             </div>
             <div id="ticketContainer">
               <p class="ticketDiv">Tickets:</p>
               <div class="tickets">
-                <a class="ticket">➖</a
+                <a class="ticket-minus">➖</a
                 ><input class="ticketCount" type="number" value="0" /><a
-                  class="ticket"
-                  >➕</a
+                  class="ticket-plus">➕</a
                 >
               </div>
             </div>
@@ -122,14 +121,14 @@
             </div>
             <div class="time">17:00</div>
             <div class="priceDiv">
-              Price: <span class="price"> $1100 </span>
+              Price: <span class="price">$1100</span>
             </div>
             <div id="ticketContainer">
               <p class="ticketDiv">Tickets:</p>
               <div class="tickets">
-                <a class="ticket">➖</a
+                <a class="ticket-minus">➖</a
                 ><input class="ticketCount" type="number" value="0" /><a
-                  class="ticket"
+                  class="ticket-plus"
                   >➕</a
                 >
               </div>
@@ -158,14 +157,14 @@
             </div>
             <div class="time">17:00</div>
             <div class="priceDiv">
-              Price: <span class="price"> $1000 </span>
+              Price: <span class="price">$1000</span>
             </div>
             <div id="ticketContainer">
               <p class="ticketDiv">Tickets:</p>
               <div class="tickets">
-                <a class="ticket">➖</a
+                <a class="ticket-minus">➖</a
                 ><input class="ticketCount" type="number" value="0" /><a
-                  class="ticket"
+                  class="ticket-plus"
                   >➕</a
                 >
               </div>
@@ -192,14 +191,14 @@
             </div>
             <div class="time">17:00</div>
             <div class="priceDiv">
-              Price: <span class="price"> $1200 </span>
+              Price: <span class="price">$1200</span>
             </div>
             <div id="ticketContainer">
               <p class="ticketDiv">Tickets:</p>
               <div class="tickets">
-                <a class="ticket">➖</a
+                <a class="ticket-minus">➖</a
                 ><input class="ticketCount" type="number" value="0" /><a
-                  class="ticket"
+                  class="ticket-plus"
                   >➕</a
                 >
               </div>
@@ -211,7 +210,7 @@
         </div>
       </div>
     </div>
-
+    
     <script src="../Script/CookiesLibrary.js"></script>
     <script src="../Script/matchesInfo.js"></script>
     <script src="../Script/Functions.js"></script>
