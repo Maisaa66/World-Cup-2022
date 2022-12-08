@@ -1,62 +1,54 @@
- h3 {
-    color: #8b1538;
-    font-size: 2.5rem;
-    /* padding-top: 150px; */
-    margin-top: 150px;
-    text-align: center;
-    padding-top: 30px;
-}
-/* 
-#bookedSection{
-    padding-bottom: 200px;
-    border-bottom: 4px solid #0000000d;
-
-} */
-
-#prevBooked, #booking{
-margin: auto;
-background-color: #bcbcb84b;
-width:80%;    
-border-radius: 25px;
-padding-bottom: 30px;
-
-
+h3 {
+  color: #8b1538;
+  font-size: 2.5rem;
+  margin-top: 150px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-#booking{
-    margin-bottom: 80px;
-}
-
-table{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-table, td, th {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-collapse: collapse;
-}
-
-th{
-font-size: 1.5rem;
-padding: 15px 0px;
-}
-
-td{
-    font-size: 1.1rem;
-    padding: 15px 20px;
-    /* background-color: aqua; */
-    /* border-radius: 25px; */
-}
-
-  tr:hover{
-  box-shadow:2px 2px 2px lightgrey;
+#prevBooked,
+#booking {
+  margin: auto;
   background-color: #bcbcb84b;
-
+  width: 80%;
+  border-radius: 25px;
+  padding-bottom: 30px;
 }
 
-.booked-team1 img, .booked-team2 img{
+#booking {
+  margin-bottom: 80px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+table,
+td,
+th {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 1.5rem;
+  padding: 15px 0px;
+}
+
+td {
+  font-size: 1.1rem;
+  padding: 15px 20px;
+}
+
+tr:hover {
+  box-shadow: 2px 2px 2px lightgrey;
+  background-color: #bcbcb84b;
+}
+
+.booked-team1 img,
+.booked-team2 img {
   width: 75px;
   border-radius: 5px;
 }
@@ -67,86 +59,84 @@ td{
   margin-top: 15px;
 }
 
-.matchCol{
-    text-align: left;
-    width: 200px;
-
+.matchCol {
+  text-align: left;
+  width: 200px;
 }
 
-.ticketCount{
-    width:15%;
-    margin: 0px 7px;
-    
+.ticketCount {
+  width: 15%;
+  margin: 0px 7px;
 }
 
-.tickets{
-    float:right;
-    display: inline;
-    text-align: right;
+.tickets {
+  float: right;
+  display: inline;
+  text-align: right;
 }
 
-.ticket-minus, .ticket-plus
-{
+.ticket-minus,
+.ticket-plus {
   cursor: pointer;
 }
 
-.ticketContainer{
-    display: inline;
-    text-align: right;
+.ticketContainer {
+  display: inline;
+  text-align: right;
 }
 
-.ticketDiv{
-    display: inline;
-    font-size: 1.23rem;
-}
-.priceDiv{
-    font-size: 1.23rem;
-    margin:  10px 0px;
-}
-.time{
-    bottom: 274px;
-}
-.price{
-    float: right;
-    margin-right: 28px;
+.ticketDiv {
+  display: inline;
+  font-size: 1.23rem;
 }
 
-  /*-------------------------------------------*/
-
- .book-button{
-    width:20%;
-    margin: auto;
-    margin-top: 20px;
-
+.priceDiv {
+  font-size: 1.23rem;
+  margin: 10px 0px;
 }
-  .book-button input{
-    background-color: #8b1538;
-    border: 1px solid #8b1538;
-    color: #edefe4;
-    border-radius: 35px;
-    /* margin-bottom: 30px; */
-    padding: 10px;
-    font-family: Qatar2022Arabic-medium;
-    box-shadow: 3px 3px 5px #888888;
-    font-size: 1rem;
-    cursor: pointer;
-    width: fit-content;
-    margin: auto;
-  }
-  
-  .book-button input:hover, .book-button input:focus{
-    background-color: #8b1538;
-    border: 1px solid #8b1538;
-    color: #edefe4;
-    border-radius: 35px;
-    /* margin-bottom: 30px; */
-    padding: 10px;
-    font-family: Qatar2022Arabic-medium;
-    box-shadow: 5px 5px 10px #888888;
-    font-size: 1rem;
-    cursor: pointer;
-  }
 
-  .match-card{
-    padding-bottom: 20px;
-  }
+.time {
+  bottom: 274px;
+}
+
+.price {
+  float: right;
+  margin-right: 28px;
+}
+
+.book-button {
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.book-button input {
+  background-color: #8b1538;
+  border: 1px solid #8b1538;
+  color: #edefe4;
+  border-radius: 35px;
+  padding: 10px;
+  font-family: Qatar2022Arabic-medium;
+  box-shadow: 3px 3px 5px #888888;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+}
+
+.book-button input:hover,
+.book-button input:focus {
+  background-color: #8b1538;
+  border: 1px solid #8b1538;
+  color: #edefe4;
+  border-radius: 35px;
+  padding: 10px;
+  font-family: Qatar2022Arabic-medium;
+  box-shadow: 5px 5px 10px #888888;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.match-card {
+  padding-bottom: 20px;
+}

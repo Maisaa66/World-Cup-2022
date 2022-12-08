@@ -68,6 +68,7 @@ body {
   float: right;
   margin: 15px;
 }
+
 #Matches {
   text-align: center;
   padding-top: 100px;
@@ -204,6 +205,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .matches-container > div {
   display: inline-block;
   text-align: left;

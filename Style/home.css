@@ -90,7 +90,6 @@ body {
   color: white;
   margin: 10rem 0 0 3rem;
   position: fixed;
-
   top: 100px;
   z-index: -1;
 }
@@ -137,7 +136,6 @@ body {
 }
 
 /* Matches Section */
-
 #Matches {
   text-align: center;
   background-color: #edefe4;
@@ -255,28 +253,30 @@ body {
 }
 
 /*footer*/
-.footer
-{
+.footer {
   background-color: #8b1538;
-  color: #edefe4;
-  height: 35vh;
+  color: #edefe4ec;
+  height: 42vh;
   margin-top: -20px;
   padding: 25px 10px 10px 30px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
-.footer ul li
-{
+.footer ul li {
   padding-bottom: 10px;
+  text-shadow: 1px 1px 3px black;
 }
 
-.footer ul li a
-{
+.footer ul li:hover {
+  color: #ffffff;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.502);
+}
+
+.footer ul li a {
   color: #edefe4;
   margin-left: 20px;
 }
 
-#rights
-{
+#rights {
   text-align: center;
 }

@@ -3,21 +3,16 @@ let now = new Date("2022/12/1 17:59").getTime(); //set the date to any date
 
 function setStatus(matches) {
   let date = new Date("2022/12/1 18:00");
-
   let month = date.getMonth();
   let day = date.getDate();
-  let hour = date.getHours() - 12;
 
   for (let i = 0; i < 12; i++) {
     let split_date = matches[i]["Date"].split("-"); // ["2", "12" ,"22"]
 
     // split_date[1]    ->   match month
     // split_date[0]    ->   match day
-
     let in_upcoming_month = split_date[1] - 1 > month;
-
     let same_month_upcoming_day = split_date[1] - 1 == month && split_date[0] > day;
-
     let today = split_date[1] - 1 == month && split_date[0] == day;
 
     if (in_upcoming_month || same_month_upcoming_day) {
@@ -43,7 +38,7 @@ function createCountDown(index, card_index) {
   let date = matches[index]["Date"];
   let time = matches[index]["Time"];
 
-  //splitting the date so i can change it from "1-12-22" to "2022-12-1"
+  // splitting the date so i can change it from "1-12-22" to "2022-12-1"
   let splitDate = date.split("-");
   let newDate = "20" + splitDate[2] + "-" + splitDate[1] + "-" + splitDate[0];
 
@@ -61,7 +56,7 @@ function createCountDown(index, card_index) {
   }
 
   let countDownInterval = setInterval(function () {
-    //get the time in mellisec until the date of the match
+    // get the time in mellisec until the date of the match
     let countDownDate = new Date(newDate + " " + hour).getTime();
 
     // get the remaining time or time left from now to the match time
@@ -78,7 +73,7 @@ function createCountDown(index, card_index) {
     minutesLeft[card_index].innerText = minutes + " minutes";
     secondsLeft[card_index].innerText = seconds + " seconds";
 
-    //if the time left is 0, it means that we reach the zero hour, so we clear the interval
+    // if the time left is 0, it means that we reach the zero hour, so we clear the interval
     if (remain_Time < 0) {
       clearInterval(countDownInterval);
       matchCountDown[card_index].innerHTML = "● Live Now";
