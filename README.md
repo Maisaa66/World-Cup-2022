@@ -166,7 +166,7 @@ Git Clone The Repo
     ✅ Booked Matches
     ✅ Available Matches
 
-<div><video controls src="./Videos/Booking-Demo.mp4" muted="true"></video></div>
+<div><img src="Videos/Booking.gif"/></div>
 
 <br>
 
