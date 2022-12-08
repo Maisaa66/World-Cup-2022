@@ -16,8 +16,9 @@
 
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
-  <summary style="font-size:18px">Table of Contents</summary> 
+  <summary style="font-size:18px"> Table of Contents</summary> 
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -33,7 +34,6 @@
   </ol>
 </details>
 
-<br>
 <!-- Project Description -->
 <div id="about-the-project">
 <!-- <img src="Images/research.png" width="30px"> -->
@@ -54,37 +54,36 @@ This project is a CST project with the following requirments:
 <div style="margin-left:10px">
 <h3>Objectives</h3>
 Practice what we have studied
-<ul>
-<li><b>HTML</b></li>
-<ol style="margin-left:-18px">
-<li>Forms</li>
-<li>Tables</li>
-<li>Image Mapping</li>
-</ol>
-<li><b>CSS</b></li>
-<ol style="margin-left:-18px">
-<li>Display</li>
-<li>Positions</li>
-<li>Box Model</li>
-</ol>
-<li><b>JavaScript</b></li>
-<ol style="margin-left:-18px">
-<li>Associative Array</li>
-<li>DOM</li>
-<li>BOM</li>
-<li>Handling Events</li>
-<li>Cookies</li>
-</ol>
-</ul>
+
+<br>
+<br>
+
+> ### HTML
+
+     ✅ Forms
+     ✅ Tables
+     ✅ Image Mapping
+
+> ### CSS
+
+    ✅ Display
+    ✅ Positions
+    ✅ Box Model
+    
+> ### JavaScript
+
+    ✅ Associative Array
+    ✅ DOM
+    ✅ BOM    
+    ✅ Handling Events
+    ✅ Cookies  
+
 </div>
 </div>
 
 
-<div id="built-with">
-<img src="https://kadkamtech.ca/wp-content/uploads/2017/10/mission.gif" width="40">
-<span style="list-style-type: upper-roman;font-size:30px; "> &nbsp; Built With</span>
-</div>
-
+ ## <img id="built-with" src="https://kadkamtech.ca/wp-content/uploads/2017/10/mission.gif" width="40"> <b style="font-family: Times New Roman; list-style-type: upper-roman;font-size:24px; "> Built With</b>
+ 
 <br>
 
 <div  style="padding-left:60px;" >
@@ -93,14 +92,11 @@ Practice what we have studied
 
 </div>
 
-
-<br>
-
 <div id="getting-started">
 <!-- <img src="Images/start-up.png" width="30"> -->
 <h2 style="list-style-type: upper-roman;font-size:26px; ">🚀 &nbsp; Getting Started</h2>
 <div style="margin-left:60px">
-<p>To get a local copy up and running follow these simple example steps.</p>
+<p>To get a local copy up and running follow thia simple step.</p>
 <p>
 Git Clone The Repo
 
@@ -169,6 +165,8 @@ Git Clone The Repo
 <br>
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
+<br>
+<br>
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b Maisaa66/World-Cup-2022`)
